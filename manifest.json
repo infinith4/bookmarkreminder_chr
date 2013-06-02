@@ -1,0 +1,24 @@
+{
+  "name": "Bookmark Reminder",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "rewrite form action in html .",
+  "browser_action": {
+    "default_icon": "img/favicon.png",
+    "name": "click to rewrite form actions"
+  },
+  "background": {
+    "scripts":["jquery.min.js", "background.js"]
+  },
+  "permissions":[
+    "tabs", "http://*/*"
+  ],
+    "content_scripts": [
+    {
+      "matches": ["http://b.hatena.ne.jp/*"],
+      "js": ["jquery.min.js","background.js","rewrite.js"],
+	  "run_at": "document_end"
+    }
+  ]
+  
+}
