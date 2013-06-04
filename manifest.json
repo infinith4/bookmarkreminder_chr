@@ -1,11 +1,12 @@
 {
   "name": "Bookmark Reminder",
-  "version": "0.1",
+  "version": "1.1",
   "manifest_version": 2,
-  "description": "rewrite form action in html .",
+  "description": "はてなブックマークを読んだか確認するアプリ(はてなにログインし,はてなブックマークで,クリックしてください.)",
   "browser_action": {
     "default_icon": "img/favicon.png",
-    "name": "click to rewrite form actions"
+    "default_title": "Bookmark Reminder (はてなにログインし,はてなブックマークで,クリックしてください.)",
+    "name": "はてなブックマークを読んだか確認するアプリ(はてなにログインし,はてなブックマークで,クリックしてください.)"
   },
   "background": {
     "scripts":["jquery.min.js", "background.js"]
