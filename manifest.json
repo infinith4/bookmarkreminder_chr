@@ -1,6 +1,6 @@
 {
   "name": "Bookmark Reminder",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 2,
   "description": "はてなブックマークを読んだか確認するアプリ(はてなにログインし,はてなブックマークで,クリックしてください.)",
   "browser_action": {
