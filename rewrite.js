@@ -25,10 +25,15 @@ entrys.push(escape(bookmarkurl));
 });
 
 var originalurls = new Array();
-$("li.users>a").each(function(i){　//bookmarkurlを取得
+$("li.users a").each(function(i){　//bookmarkurlを取得
 var originalurl = $(this).attr('href');                                 
-//console.log("originalurl");
-originalurls.push(originalurl.replace('\/entry\/','http://'));
+
+if(originalurl.match('\/entry\/s\/') == '\/entry\/s\/'){
+  originalurls.push(originalurl.replace('\/entry\/s\/','https://'));
+}else{
+  originalurls.push(originalurl.replace('\/entry\/','http://'));
+
+}
 //console.log(originalurl.replace('\/entry\/','http://'));
 });
 
